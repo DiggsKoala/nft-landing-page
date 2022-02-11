@@ -79,20 +79,20 @@ function updateStatusText(isOwner, checking) {
   if(checking) {
     if(isOwner) {
       statusText.innerText = `You do own ${COLLECTION_NAME} NFTs!! 🐨 Let's see how many${renderDots(dots)}`;
-      const statusText = document.querySelector('.memberForm'); 
+     
     } else {
       statusText.innerText = `Checking to see if you own any! ${COLLECTION_NAME} 🐨${renderDots(dots)}`;
     }
   } else {
     if(isOwner) {
       statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME} NFTs!!🐨🎉`;
-      const statusText = document.querySelector('.memberForm');
+      
     }
     else {
       statusText.innerText = `You don't own any ${COLLECTION_NAME} 😭. Check out the collection on OpenSea. `;
     }
   }
-  dots = dots === 3 ? 1 : dots + 1;
+  dots = dots === 5 ? 1 : dots + 1;
 }
 
 function renderDots(dots) {
