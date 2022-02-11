@@ -86,6 +86,7 @@ function updateStatusText(isOwner, checking) {
   } else {
     if(isOwner) {
       statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME} NFTs!!🐨🎉`;
+      const statusText = document.querySelector('.memberForm');
       
     }
     else {
