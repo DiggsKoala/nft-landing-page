@@ -57,8 +57,33 @@
     </section>
 
     <section class="container">
+       
+      <div hidden class="form">
+        <form name="memberContact" method="POST" data-netlify="true">
+          <p>
+            <label>Welcome!!! Enter your information to unlock all of your DKLC Members benefits. 
+          </p>
+          <p>
+            <label>Your Wallet Address: <input type="text" name="wAddress" /></label>   
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+             <label>Discord Username: <input type="text" name="discordName" /></label>  
+          </p>
+          <p>
+            <label>Leave us a message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <label>Make sure your information is correct or access will not be granted. 
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div> 
       <div class="owner-status"></div>
-      <div class="memberForm"></div>
       <div class="countdown">
         <ul
           id="countdown"
