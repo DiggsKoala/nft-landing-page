@@ -1,6 +1,7 @@
 // METAMASK CONNECTION
 const TIMEOUT = 1000;
 const COLLECTION_NAME = 'Dry Koala Land Club';
+const form = document.getElementById("form");
 let editions = [];
 let dots = 1;
 
@@ -86,6 +87,9 @@ function updateStatusText(isOwner, checking) {
   } else {
     if(isOwner) {
       statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME} NFTs!!🐨🎉`;
+      if(isOwner===true){
+        form.style.display = "visible";
+      }
       
       
     }
@@ -95,6 +99,7 @@ function updateStatusText(isOwner, checking) {
   }
   dots = dots === 5 ? 1 : dots + 1;
 }
+
 
 function renderDots(dots) {
   let dotsString = '';
