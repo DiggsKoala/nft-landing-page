@@ -4,7 +4,7 @@
 
 /* GLOBAL STYLES */
 
-:root {
+:root {cursor: pointer;
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Arvo', serif;
   --font-code: 'Roboto', monospace;
