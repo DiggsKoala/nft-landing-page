@@ -89,6 +89,19 @@ function updateStatusText(isOwner, checking) {
       statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME} NFTs!!🐨🎉`;
       if(isOwner===true){
         document.getElementsByTagName("form")[0].removeAttribute("hidden");
+        document.querySelector("form").addEventListener("submit", handleSubmit);
+
+      const handleSubmit = (e) => {e.preventDefault();
+      let myForm = document.getElementById("form");
+      let formData = new FormData(myForm);fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+          })
+          .then(() => console.log("Form successfully submitted"))
+          .catch((error) => alert(error));
+};
+
       }
       
       
