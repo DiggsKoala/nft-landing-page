@@ -91,6 +91,20 @@ header .container {
   padding: 1.5rem 3rem;
 }
 
+.form-btn {
+  padding: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 4px 4px 0 0 var(--accent-color);
+  border-radius: 5rem;
+  margin-left: 2rem;
+  border-color: #ffffff;
+  color: #ffffff;
+  font: 'poppins';
+  font-style: italic;
+  font-weight: bold;
+  background-color:  #0d9c44;
+
+}
 /* COUNTDOWN SECTION */
 
 section {
