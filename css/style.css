@@ -85,6 +85,11 @@ header .container {
   border-color: transparent;
 }
 
+.trust-btn {
+  border-radius: 5rem;
+  margin-left: 2rem;
+  border-color: transparent;
+}
 .hero-btn {
   border-radius: 4px;
   font-size: 1.2rem;
